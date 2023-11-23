@@ -16,6 +16,8 @@ export default class MathCharacter extends Character {
       this.attack = Math.round(this.attack - (Math.log2(this.distance) * 5));
     }
     if (this.attack < 0) this.attack = 0;
+
+    return this.attack;
   }
 
   setAttack(value) {
